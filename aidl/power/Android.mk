@@ -24,7 +24,7 @@ LOCAL_SHARED_LIBRARIES := \
     libbase \
     libbinder \
     libutils \
-    android.hardware.power-V1-ndk_platform \
+    android.hardware.power-V1-ndk \
     libbinder_ndk
 
 LOCAL_SRC_FILES := \
