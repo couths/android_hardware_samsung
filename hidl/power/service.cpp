@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.power-service.exynos"
+#define LOG_TAG "android.hardware.power@1.0-service.exynos"
 
 #include <android-base/logging.h>
 #include <hidl/HidlTransportSupport.h>
