@@ -57,8 +57,6 @@ extern "C" {
 	bool touchkeys_blocked;
 	std::string sec_touchkey;
 	std::string sec_touchscreen;
-	std::vector<std::string> hispeed_freqs;
-	std::vector<std::string> max_freqs;
 }
 
 /*
@@ -156,7 +154,7 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
             LOG(INFO) << "Mode " << static_cast<int32_t>(type) << "Not Supported";
             break;
         case Mode::LAUNCH:
-			sendBoostpulse();
+	    sendBoostpulse();
             break;
         case Mode::INTERACTIVE:
             setInteractive(enabled);
@@ -203,7 +201,7 @@ ndk::ScopedAStatus Power::setBoost(Boost type, int32_t durationMs) {
                  << ", duration: " << durationMs;
     switch (type) {
         case Boost::INTERACTION:
-			sendBoost(durationMs);
+	    sendBoost(durationMs);
             break;
         default:
             LOG(INFO) << "Boost " << static_cast<int32_t>(type) << "Not Supported";
