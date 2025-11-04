@@ -38,7 +38,7 @@ LOCAL_SRC_FILES := \
 
 LOCAL_C_INCLUDES := \
     $(LOCAL_PATH)/include \
-    hardware/samsung/aidl/light/include \
+    hardware/samsung/aidl/light/include
 
 LOCAL_STATIC_LIBRARIES := libc++fs
 
