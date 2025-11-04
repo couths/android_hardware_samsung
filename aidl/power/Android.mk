@@ -21,11 +21,16 @@ include $(CLEAR_VARS)
 LOCAL_MODULE_RELATIVE_PATH := hw
 
 LOCAL_SHARED_LIBRARIES := \
+    liblog \
+    libcutils \
+    libdl \
     libbase \
-    libbinder \
     libutils \
     android.hardware.power-V1-ndk \
     libbinder_ndk
+
+LOCAL_HEADER_LIBRARIES := \
+    libhardware_headers
 
 LOCAL_SRC_FILES := \
     Power.cpp \
